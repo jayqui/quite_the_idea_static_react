@@ -2,8 +2,8 @@ import spotify from '.././img/spotify.png';
 import soundcloud from '.././img/soundcloud.png';
 import bandcamp from '.././img/bandcamp.png';
 import youtube from '.././img/youtube.png';
-import apple from '.././img/apple.png';
 import googleplay from '.././img/googleplay.png';
+import apple from '.././img/apple.png';
 import amazon from '.././img/amazon.png';
 import napster from '.././img/napster.png';
 import tidal from '.././img/tidal.png';
@@ -39,18 +39,18 @@ export default [
     href: 'https://www.youtube.com/channel/UC_zOf7itJFDg7fxUDTugPXQ',
   },
   {
-    title: '‎Apple Music',
-    alt: 'apple',
-    logo: apple,
-    className: 'music-link-apple',
-    href: 'https://itunes.apple.com/us/artist/quite-the-idea/1412460325',
-  },
-  {
     title: 'Google Play',
     alt: 'google-play',
     logo: googleplay,
     className: 'music-link-google-play',
     href: 'https://play.google.com/store/music/artist/Quite_the_Idea?id=Awpkxj5ulphxgewiwpke7gbreyq',
+  },
+  {
+    title: '‎Apple Music',
+    alt: 'apple',
+    logo: apple,
+    className: 'music-link-apple',
+    href: 'https://itunes.apple.com/us/artist/quite-the-idea/1412460325',
   },
   {
     title: 'Amazon Music',
