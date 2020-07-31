@@ -60,7 +60,7 @@ self.__precacheManifest = [
     "url": "/static/media/eyes_cityscape_cropped.71e5c11d.jpg"
   },
   {
-    "revision": "9532bd11187c15d92a376a49a7783f91",
+    "revision": "73394c48f3c648625d032ffc3afbdd8e",
     "url": "/index.html"
   }
 ];
