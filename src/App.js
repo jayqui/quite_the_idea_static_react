@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Link, Switch, Route } from 'react-router-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Footer from './Footer';
 import Logo from './Logo';
 
@@ -20,7 +20,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <Logo logo={logo} />
-          <BrowserRouter>
+          <BrowserRouter basename={process.env.PUBLIC_URL}>
             <Switch>
               <Route path='/bar'>
                 bar
