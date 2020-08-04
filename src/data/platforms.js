@@ -1,13 +1,13 @@
-import spotify from '.././img/spotify.png';
-import soundcloud from '.././img/soundcloud.png';
-import bandcamp from '.././img/bandcamp.png';
-import youtube from '.././img/youtube.png';
-import googleplay from '.././img/googleplay.png';
-import apple from '.././img/apple.png';
-import amazon from '.././img/amazon.png';
-import napster from '.././img/napster.png';
-import tidal from '.././img/tidal.png';
-import deezer from '.././img/deezer.png';
+import spotify from '.././img/platforms/spotify.png';
+import soundcloud from '.././img/platforms/soundcloud.png';
+import bandcamp from '.././img/platforms/bandcamp.png';
+import youtube from '.././img/platforms/youtube.png';
+import googleplay from '.././img/platforms/googleplay.png';
+import apple from '.././img/platforms/apple.png';
+import amazon from '.././img/platforms/amazon.png';
+import napster from '.././img/platforms/napster.png';
+import tidal from '.././img/platforms/tidal.png';
+import deezer from '.././img/platforms/deezer.png';
 
 export default [
   {
