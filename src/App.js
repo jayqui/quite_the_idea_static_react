@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { HashRouter, Switch, Route } from 'react-router-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Footer from './Footer';
 import Logo from './Logo';
 
@@ -20,7 +20,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <Logo logo={logo} />
-          <HashRouter basename='/'>
+          <BrowserRouter basename={process.env.PUBLIC_URL}>
             <Switch>
               <Route path='/bar'>
                 bar
@@ -28,7 +28,7 @@ class App extends Component {
               <Route exact path='/'></Route>
               <Route component={NoMatchPage} />
             </Switch>
-          </HashRouter>
+          </BrowserRouter>
           <Footer data={data} />
         </header>
       </div>
