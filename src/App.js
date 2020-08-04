@@ -4,7 +4,8 @@ import Footer from './Footer';
 import Logo from './Logo';
 
 import logo from './logo.svg';
-import platformsData from './data/platformsData.js';
+import platforms from './data/platforms.js';
+import releases from './data/releases.js';
 
 import './App.css';
 
@@ -22,14 +23,14 @@ class App extends Component {
           <Logo logo={logo} />
           <BrowserRouter basename={`${process.env.PUBLIC_URL}/`}>
             <Switch>
-              <Route path={`${process.env.PUBLIC_URL}/bar`}>
-                bar
-              </Route>
-              <Route exact path={`${process.env.PUBLIC_URL}/`}></Route>
+              <Route exact path='/'></Route>
+              {releases.map((release) => (
+                <Route exact key={release.id} path={`/${release.slug}`}></Route>
+              ))}
               <Route component={NoMatchPage} />
             </Switch>
           </BrowserRouter>
-          <Footer data={platformsData} />
+          <Footer data={platforms} />
         </header>
       </div>
     );
