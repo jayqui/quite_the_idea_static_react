@@ -4,7 +4,7 @@ import Footer from './Footer';
 import Logo from './Logo';
 
 import logo from './logo.svg';
-import data from './data/data.js';
+import platformsData from './data/platformsData.js';
 
 import './App.css';
 
@@ -29,7 +29,7 @@ class App extends Component {
               <Route component={NoMatchPage} />
             </Switch>
           </BrowserRouter>
-          <Footer data={data} />
+          <Footer data={platformsData} />
         </header>
       </div>
     );
