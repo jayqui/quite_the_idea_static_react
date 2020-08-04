@@ -1,17 +1,17 @@
 import React from 'react';
 
-const FooterItem = ({ datum }) => (
-  <li className="music-links-li" key={datum.className}>
+const FooterItem = ({ platform }) => (
+  <li className="platform-link-li" key={platform.className}>
     <a
       target="_blank"
       rel="noopener noreferrer"
-      className={`music-link ${datum.className}`}
-      href={datum.href}
+      className={platform.className}
+      href={platform.href}
     >
       <img
-        src={datum.logo}
-        title={datum.title}
-        alt={datum.alt}
+        src={platform.logo}
+        title={platform.title}
+        alt={platform.alt}
       />
     </a>
   </li>

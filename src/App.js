@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Footer from './components/Footer';
-import Logo from './Logo';
+import Logo from './components/Logo';
 
-import logo from './logo.svg';
-import platforms from './data/platforms.js';
 import releases from './data/releases.js';
 
 import './App.css';
@@ -20,7 +18,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <Logo logo={logo} />
+          <Logo />
           <BrowserRouter basename={`${process.env.PUBLIC_URL}/`}>
             <Switch>
               <Route exact path='/'></Route>
@@ -30,7 +28,7 @@ class App extends Component {
               <Route component={NoMatchPage} />
             </Switch>
           </BrowserRouter>
-          <Footer data={platforms} />
+          <Footer />
         </header>
       </div>
     );

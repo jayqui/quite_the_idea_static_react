@@ -1,0 +1,8 @@
+.logo-container {
+  background: rgba(255,255,255,0.5);
+  text-align: center;
+}
+
+.logo {
+  max-height: 15vh;
+}
