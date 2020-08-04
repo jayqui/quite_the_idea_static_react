@@ -4,7 +4,7 @@ import FooterItem from './FooterItem';
 const Footer = ({ data }) => (
   <div className="music-links-container">
     <ul className="music-links-ul">
-      {data.map(datum => <FooterItem datum={datum} />)}
+      {data.map(datum => <FooterItem key={datum.id} datum={datum} />)}
     </ul>
   </div>
 )
