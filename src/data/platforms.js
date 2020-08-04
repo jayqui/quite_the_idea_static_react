@@ -1,5 +1,5 @@
-import spotify from '.././img/platforms/spotify.png';
 import soundcloud from '.././img/platforms/soundcloud.png';
+import spotify from '.././img/platforms/spotify.png';
 import bandcamp from '.././img/platforms/bandcamp.png';
 import youtube from '.././img/platforms/youtube.png';
 import googleplay from '.././img/platforms/googleplay.png';

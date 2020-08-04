@@ -1,0 +1,9 @@
+.logo-container {
+  position: relative;
+  width: fit-content;
+  padding: 2vw;
+}
+
+.logo {
+  max-height: 10vh;
+}
