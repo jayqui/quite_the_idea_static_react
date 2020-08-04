@@ -1,6 +1,7 @@
 .logo-container {
-  background: rgba(255,255,255,0.5);
-  text-align: center;
+  position: relative;
+  background: rgba(255,255,255,0.2);
+  width: fit-content;
 }
 
 .logo {

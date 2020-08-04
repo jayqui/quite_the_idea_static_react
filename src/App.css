@@ -3,11 +3,23 @@
 html, body {
   margin: 0;
   font-family: Ovo, Georgia, sans-serif;
+  background: rgb(30, 25, 22);
 }
-body {
+
+ul {
+  padding: 0;
+}
+
+.App {
+  opacity: 0.5;
+  height: 100vh;
   background-image: url("img/guitar_cropped_xparent_bkgd.png");
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+
+.App-main {
+  color: white;
 }

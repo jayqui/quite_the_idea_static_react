@@ -17,19 +17,23 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
+        <main className="App-main">
           <Logo />
           <BrowserRouter basename={`${process.env.PUBLIC_URL}/`}>
             <Switch>
               <Route exact path='/'></Route>
               {releases.map((release) => (
-                <Route exact key={release.id} path={`/${release.slug}`}></Route>
+                <Route exact
+                key={release.id}
+                path={`/${release.slug}`}>
+                  {release.slug}
+                </Route>
               ))}
               <Route component={NoMatchPage} />
             </Switch>
           </BrowserRouter>
-          <Footer />
-        </header>
+        </main>
+        <Footer />
       </div>
     );
   }
