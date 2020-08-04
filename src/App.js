@@ -22,10 +22,10 @@ class App extends Component {
           <Logo logo={logo} />
           <BrowserRouter basename={`${process.env.PUBLIC_URL}/`}>
             <Switch>
-              <Route path='/bar'>
+              <Route path={`${process.env.PUBLIC_URL}/bar`}>
                 bar
               </Route>
-              <Route exact path='/'></Route>
+              <Route exact path={`${process.env.PUBLIC_URL}/`}></Route>
               <Route component={NoMatchPage} />
             </Switch>
           </BrowserRouter>
