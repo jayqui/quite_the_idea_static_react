@@ -1,9 +1,8 @@
 import React from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import Footer from './components/Footer';
+import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
 import Logo from './components/Logo';
 import Releases from './components/Releases';
-import ActionButtons from './components/ActionButtons';
+import HomeActionPage from './components/HomeActionPage';
 
 import releases from './data/releases.js';
 
@@ -20,27 +19,24 @@ function App() {
 
   return (
     <div className="App">
-      <main className="App-main">
-        <Logo />
+      <BrowserRouter basename={`${process.env.PUBLIC_URL}/`}>
+        <Link to='/'><Logo /></Link>
 
-        <BrowserRouter basename={`${process.env.PUBLIC_URL}/`}>
-          <Switch>
-            <Route exact path='/'>
-              <ActionButtons latestSlug={latestSlug} />
+        <Switch>
+          <Route exact path='/'><HomeActionPage latestSlug={latestSlug} /></Route>
+          <Route exact path='/releases'>{Releases}</Route>
+
+          {releases.map((release) => (
+            <Route exact
+              key={release.id}
+              path={`/${release.slug}`}>
+              {release.slug}
             </Route>
-            <Route exact path='/releases' component={Releases}></Route>
-            {releases.map((release) => (
-              <Route exact
-                key={release.id}
-                path={`/${release.slug}`}>
-                {release.slug}
-              </Route>
-            ))}
-            <Route component={NoMatchPage} />
-          </Switch>
-        </BrowserRouter>
-      </main>
-      <Footer />
+          ))}
+
+          <Route component={NoMatchPage} />
+        </Switch>
+      </BrowserRouter>
     </div>
   );
 }
