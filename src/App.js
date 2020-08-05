@@ -1,7 +1,9 @@
-import React, { Component } from 'react';
-import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
+import React from 'react';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Footer from './components/Footer';
 import Logo from './components/Logo';
+import Releases from './components/Releases';
+import ActionButtons from './components/ActionButtons';
 
 import releases from './data/releases.js';
 
@@ -13,36 +15,34 @@ const NoMatchPage = () => {
   );
 };
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <main className="App-main">
-          <Logo />
+function App() {
+  const latestSlug = 'what-would-make-us-truly-great';
 
-          <div className='action-buttons-container'>
-            <button className='action-button' type='button'>Latest</button>
-            <button className='action-button' type='button'>All Releases</button>
-          </div>
+  return (
+    <div className="App">
+      <main className="App-main">
+        <Logo />
 
-          <BrowserRouter basename={`${process.env.PUBLIC_URL}/`}>
-            <Switch>
-              <Route exact path='/'></Route>
-              {releases.map((release) => (
-                <Route exact
+        <BrowserRouter basename={`${process.env.PUBLIC_URL}/`}>
+          <Switch>
+            <Route exact path='/'>
+              <ActionButtons latestSlug={latestSlug} />
+            </Route>
+            <Route exact path='/releases' component={Releases}></Route>
+            {releases.map((release) => (
+              <Route exact
                 key={release.id}
                 path={`/${release.slug}`}>
-                  {release.slug}
-                </Route>
-              ))}
-              <Route component={NoMatchPage} />
-            </Switch>
-          </BrowserRouter>
-        </main>
-        <Footer />
-      </div>
-    );
-  }
+                {release.slug}
+              </Route>
+            ))}
+            <Route component={NoMatchPage} />
+          </Switch>
+        </BrowserRouter>
+      </main>
+      <Footer />
+    </div>
+  );
 }
 
 export default App;
