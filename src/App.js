@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
 import Logo from './components/Logo';
 import Releases from './components/Releases';
+import Release from './components/Release';
 import HomeActionPage from './components/HomeActionPage';
 
 import releases from './data/releases.js';
@@ -29,8 +30,9 @@ function App() {
           {releases.map((release) => (
             <Route exact
               key={release.id}
-              path={`/${release.slug}`}>
-              {release.slug}
+              path={`/${release.slug}`}
+            >
+              <Release release={release} />
             </Route>
           ))}
 

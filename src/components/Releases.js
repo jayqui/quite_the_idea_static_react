@@ -9,7 +9,7 @@ function Releases () {
     <div className='releases-table'>
       {releasesInReverse.map((release) => {
         return (
-          <>
+          <React.Fragment key={release.id}>
             <div className='releases-table-cell releases-table-cell-year'>
               <Link to={`${release.slug}`}>
                 <img className='release-mini-image' src={release.image} alt={release.title} />
@@ -22,7 +22,7 @@ function Releases () {
                 </button>
               </Link>
             </div>
-          </>
+          </React.Fragment>
         );
       })}
     </div>

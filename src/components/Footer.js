@@ -8,7 +8,10 @@ function Footer() {
   return (
     <div className="platforms-links-container">
       <ul className="platforms-links-ul">
-        {platforms.map(platform => <FooterItem key={platform.id} platform={platform} />)}
+        {Object.keys(platforms).map((platformName) => {
+          const platform = platforms[platformName];
+          return <FooterItem key={platform.id} platform={platform} />
+        })}
       </ul>
     </div>
   );

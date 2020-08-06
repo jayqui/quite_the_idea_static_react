@@ -1,0 +1,38 @@
+.Release-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 3vh 3vh 0 3vh;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+}
+
+.Release-image {
+  max-width: 50vh;
+  border: 10px solid black;
+  border-radius: 10px;
+}
+
+.Release-platform-links-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.Release-platform-icon {
+  max-width: 7vh;
+  padding: 1vh;
+}
+
+.Release-embed-container iframe {
+  border: 1;
+  box-sizing: border-box;
+  border-radius: 3px;
+  margin-top: 1vh;
+  width: 100%;
+  height: 80px;
+}
