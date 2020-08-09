@@ -1,56 +1,17 @@
 import React from 'react';
-import platforms from '../data/platforms.js';
-import goFundMeLogo from '../img/gofundme_widget_logo.png';
+import ReleaseSpotifyEmbed from './ReleaseSpotifyEmbed';
+import ReleaseGoFundMeEmbed from './ReleaseGoFundMeEmbed';
+import ReleasePlatformLinks from './ReleasePlatformLinks';
+
 import './Release.css';
 
 function Release({ release }) {
   return (
     <div className='Release-container'>
       <img className='Release-image' src={release.image} alt={release.title} />
-
-      {release.spotifyEmbedUrl && <div className='Release-embed-container'>
-        <iframe
-          title='spotifyEmbed'
-          src={release.spotifyEmbedUrl} seamless>
-            <a href={release.platformUrls.bandcamp}>
-              What Would Make Us Truly Great? by Quite the idea
-            </a>
-        </iframe>
-      </div>}
-
-      {release.goFundMeEmbedUrl && <div className='Release-fundraiser-embed-container'>
-        <iframe
-          title='goFundMeWidget'
-          height="85px"
-          width="310px"
-          src={release.goFundMeEmbedUrl}
-          type="text/html">
-        </iframe>
-        <img className='Release-fundraiser-logo' src={goFundMeLogo} alt='GoFundMe logo' />
-      </div>}
-
-      <div className='Release-platform-links-container'>
-        {Object.keys(release.platformUrls).map((platformName) => {
-          const platform = platforms[platformName];
-          const songUrl = release.platformUrls[platformName];
-
-          if (!songUrl) { return null; }
-          return (
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href={songUrl}
-            >
-              <img
-                className='Release-platform-icon'
-                key={platform.alt}
-                src={platform.logo}
-                alt={platform.alt}
-              />
-            </a>
-          )
-        })}
-      </div>
+      {release.spotifyEmbedUrl && <ReleaseSpotifyEmbed release={release}/>}
+      {release.goFundMeEmbedUrl && <ReleaseGoFundMeEmbed release={release} />}
+      <ReleasePlatformLinks release={release} />
     </div>
   )
 }
