@@ -1,5 +1,6 @@
 import React from 'react';
 import platforms from '../data/platforms.js';
+import goFundMeLogo from '../img/gofundme_widget_logo.png';
 import './Release.css';
 
 function Release({ release }) {
@@ -9,12 +10,23 @@ function Release({ release }) {
 
       {release.spotifyEmbedUrl && <div className='Release-embed-container'>
         <iframe
-          title='foo'
+          title='spotifyEmbed'
           src={release.spotifyEmbedUrl} seamless>
             <a href={release.platformUrls.bandcamp}>
               What Would Make Us Truly Great? by Quite the idea
             </a>
         </iframe>
+      </div>}
+
+      {release.goFundMeEmbedUrl && <div className='Release-fundraiser-embed-container'>
+        <iframe
+          title='goFundMeWidget'
+          height="85px"
+          width="310px"
+          src={release.goFundMeEmbedUrl}
+          type="text/html">
+        </iframe>
+        <img className='Release-fundraiser-logo' src={goFundMeLogo} alt='GoFundMe logo' />
       </div>}
 
       <div className='Release-platform-links-container'>

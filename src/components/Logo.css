@@ -1,9 +1,8 @@
 .logo-container {
-  position: relative;
   width: fit-content;
-  padding: 2vw;
+  padding: 1.5vh 1.5vw 0vh;
 }
 
 .logo {
-  max-height: 10vh;
+  max-height: 8.5vh;
 }

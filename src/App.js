@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Logo from './components/Logo';
 import Releases from './components/Releases';
 import Release from './components/Release';
@@ -21,7 +21,7 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter basename={`${process.env.PUBLIC_URL}/`}>
-        <Link to='/'><Logo /></Link>
+        <Logo />
 
         <Switch>
           <Route exact path='/'><HomeActionPage latestSlug={latestSlug} /></Route>
