@@ -1,5 +1,5 @@
 import React from 'react';
-import Footer from './Footer';
+import HomeActionPageFooter from './HomeActionPageFooter';
 import { Link } from 'react-router-dom';
 import './HomeActionPage.css';
 
@@ -14,7 +14,7 @@ function HomeActionPage ({ latestSlug }) {
           <button className='action-button' type='button'>All Releases</button>
         </Link>
       </div>
-      <Footer />
+      <HomeActionPageFooter />
     </>
   );
 }

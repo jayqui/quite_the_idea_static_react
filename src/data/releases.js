@@ -22,7 +22,7 @@ export default [
     slug: 'god-only-knows',
     image: god_only_knows,
     // bandcampEmbedUrl: null,
-    spotifyEmbedUrl: null,
+    spotifyEmbedUrl: 'https://open.spotify.com/embed/track/6NTxYhm4ToGD7x5STq1ExQ',
     platformUrls: godOnlyKnowsUrls,
   },
   {
@@ -32,7 +32,7 @@ export default [
     slug: 'shes-not-lovin-it',
     image: shes_not_lovin_it,
     // bandcampEmbedUrl: null,
-    spotifyEmbedUrl: null,
+    spotifyEmbedUrl: 'https://open.spotify.com/embed/track/0QEti87mIN94BIjwgswYS5',
     platformUrls: shesNotLovinItUrls,
   },
   {
@@ -42,7 +42,7 @@ export default [
     slug: 'grow-it-clean-a-clean-meat-prophecy',
     image: grow_it_clean,
     // bandcampEmbedUrl: null,
-    spotifyEmbedUrl: null,
+    spotifyEmbedUrl: 'https://open.spotify.com/embed/track/1plF0sJ2y0kSo7wVANUgeU',
     platformUrls: growItCleanUrls,
   },
   {
@@ -52,7 +52,7 @@ export default [
     slug: 'happy-safe-and-free',
     image: happy_safe_and_free,
     // bandcampEmbedUrl: null,
-    spotifyEmbedUrl: null,
+    spotifyEmbedUrl: 'https://open.spotify.com/embed/track/2fzDsoCZMxi2gYDOfEpzDJ',
     platformUrls: happySafeAndFreeUrls,
   },
   {
@@ -62,7 +62,7 @@ export default [
     slug: 'existence-is-a-knife',
     image: existence_is_a_knife,
     // bandcampEmbedUrl: null,
-    spotifyEmbedUrl: null,
+    spotifyEmbedUrl: 'https://open.spotify.com/embed/album/0yIUKpv3lNJCm8D7ZyRYu4',
     platformUrls: existenceIsAKnifeUrls,
   },
   {
@@ -72,7 +72,7 @@ export default [
     slug: 'what-i-see-is-someone',
     image: what_i_see_is_someone,
     // bandcampEmbedUrl: null,
-    spotifyEmbedUrl: null,
+    spotifyEmbedUrl: 'https://open.spotify.com/embed/album/1jLueellQym6UQARO7p1AD',
     platformUrls: whatISeeIsSomeoneUrls,
   },
   {
