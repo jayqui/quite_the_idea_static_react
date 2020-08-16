@@ -3,43 +3,22 @@
 html, body {
   margin: 0;
   font-family: Ovo, Georgia, sans-serif;
+  background: #032546;
 }
-body {
-  background-image: url("img/eyes_cityscape_cropped.jpg");
-  background-position: center;
+
+ul {
+  padding: 0;
+}
+
+.App {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("img/guitar_cropped_xparent_bkgd_dark50.png");
+  background-position-x: left;
+  background-position-y: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-}
-
-.logo-container {
-  background: rgba(255,255,255,0.5);
-}
-
-.logo {
-  margin-left: 35%;
-  width: 65%;
-}
-
-.music-links-container {
-  background-color: rgba(255,255,255,0.5);
   position: absolute;
-  width: 100%;
-  bottom: 0;
-}
-
-.music-links-ul {
-  right: 0;
-  list-style: none;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.music-links-li {
-  display: inline-block;
-  margin: 2px 5px;
-}
-
-.music-links-li a img {
-  max-width: 6.5vmax;
+  color: white;
 }

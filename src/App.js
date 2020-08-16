@@ -1,10 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import Footer from './Footer';
-import Logo from './Logo';
+import Logo from './components/Logo';
+import Releases from './components/Releases';
+import Release from './components/Release';
+import HomeActionPage from './components/HomeActionPage';
 
-import logo from './logo.svg';
-import platformsData from './data/platformsData.js';
+import releases from './data/releases.js';
 
 import './App.css';
 
@@ -14,26 +15,32 @@ const NoMatchPage = () => {
   );
 };
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <Logo logo={logo} />
-          <BrowserRouter basename={`${process.env.PUBLIC_URL}/`}>
-            <Switch>
-              <Route path={`${process.env.PUBLIC_URL}/bar`}>
-                bar
-              </Route>
-              <Route exact path={`${process.env.PUBLIC_URL}/`}></Route>
-              <Route component={NoMatchPage} />
-            </Switch>
-          </BrowserRouter>
-          <Footer data={platformsData} />
-        </header>
-      </div>
-    );
-  }
+function App() {
+  const latestSlug = 'what-would-make-us-truly-great';
+
+  return (
+    <div className="App">
+      <BrowserRouter basename={`${process.env.PUBLIC_URL}/`}>
+        <Logo />
+
+        <Switch>
+          <Route exact path='/'><HomeActionPage latestSlug={latestSlug} /></Route>
+          <Route exact path='/releases'>{Releases}</Route>
+
+          {releases.map((release) => (
+            <Route exact
+              key={release.id}
+              path={`/${release.slug}`}
+            >
+              <Release release={release} />
+            </Route>
+          ))}
+
+          <Route component={NoMatchPage} />
+        </Switch>
+      </BrowserRouter>
+    </div>
+  );
 }
 
 export default App;

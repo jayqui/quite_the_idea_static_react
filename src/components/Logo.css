@@ -1,0 +1,8 @@
+.logo-container {
+  width: fit-content;
+  padding: 1.5vh 1.5vw 0vh;
+}
+
+.logo {
+  max-height: 8.5vh;
+}

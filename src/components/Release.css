@@ -1,0 +1,55 @@
+.Release-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 2vh 3vh 0 3vh;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  width: fit-content;
+}
+
+.Release-image {
+  max-width: 300px;
+  border: 10px solid black;
+  border-radius: 10px;
+}
+
+.Release-platform-links-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.Release-platform-icon {
+  max-width: 7vh;
+  padding: 1vh;
+}
+
+.Release-embed-container iframe {
+  border: 1;
+  box-sizing: border-box;
+  border-radius: 3px;
+  margin-top: 1vh;
+  width: 100%;
+  height: 84px;
+}
+
+.Release-fundraiser-embed-container {
+  position: relative;
+}
+
+.Release-fundraiser-embed-container iframe {
+  border: 4px solid black;
+  border-radius: 10px;
+}
+
+.Release-fundraiser-logo {
+  position: absolute;
+  right: 30px;
+  bottom: 17px;
+  width: 70px;
+}
