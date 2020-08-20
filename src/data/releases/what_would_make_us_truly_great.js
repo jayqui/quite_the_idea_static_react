@@ -1,6 +1,6 @@
 const whatWouldMakeUsTrulyGreat = {
   spotify: 'https://open.spotify.com/album/7DmEf8o3nQxFbjfRoeFC2A',
-  bandcamp: 'http://quitetheidea.bandcamp.com/track/what-would-make-us-truly-great',
+  bandcamp: 'https://quitetheidea.bandcamp.com/track/what-would-make-us-truly-great',
   youtube: 'https://www.youtube.com/watch?v=dUJ61PYdjug',
   soundcloud: 'https://soundcloud.com/quitetheidea/what-would-make-us-truly-great',
   apple: 'https://music.apple.com/us/album/what-would-make-us-truly-great-single/1527376468',

@@ -1,7 +1,7 @@
 {
   "name": "quite_the_idea_static_react",
   "version": "0.1.0",
-  "homepage": "http://quitetheidea.com",
+  "homepage": "https://quitetheidea.com",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
