@@ -1,10 +1,10 @@
-import god_only_knows from '../img/releases/god_only_knows.jpg';
-import shes_not_lovin_it from '../img/releases/shes_not_lovin_it.jpg';
-import grow_it_clean from '../img/releases/grow_it_clean.jpg';
-import happy_safe_and_free from '../img/releases/happy_safe_and_free.jpg';
-import existence_is_a_knife from '../img/releases/existence_is_a_knife.jpg';
-import what_i_see_is_someone from '../img/releases/what_i_see_is_someone.jpg';
-import what_would_make_us_truly_great from '../img/releases/what_would_make_us_truly_great.png';
+import god_only_knows from '../img/releases/god_only_knows_300px.jpg';
+import shes_not_lovin_it from '../img/releases/shes_not_lovin_it_300px.jpg';
+import grow_it_clean from '../img/releases/grow_it_clean_300px.jpg';
+import happy_safe_and_free from '../img/releases/happy_safe_and_free_300px.jpg';
+import existence_is_a_knife from '../img/releases/existence_is_a_knife_300px.jpg';
+import what_i_see_is_someone from '../img/releases/what_i_see_is_someone_300px.jpg';
+import what_would_make_us_truly_great from '../img/releases/what_would_make_us_truly_great_300px.png';
 
 import godOnlyKnowsUrls from './releases/god_only_knows.js';
 import shesNotLovinItUrls from './releases/shes_not_lovin_it.js';
