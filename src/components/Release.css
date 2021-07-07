@@ -11,12 +11,6 @@
   width: fit-content;
 }
 
-.Release-image {
-  max-width: 300px;
-  border: 10px solid black;
-  border-radius: 10px;
-}
-
 .Release-platform-links-container {
   display: flex;
   flex-wrap: wrap;
@@ -29,15 +23,15 @@
   padding: 1vh;
 }
 
+ /***** song embed stuff *****/
 .Release-embed-container iframe {
-  border: 1;
+  border: 4px solid black;
+  border-radius: 10px;
+  margin: 2vh 0;
   box-sizing: border-box;
-  border-radius: 3px;
-  margin-top: 1vh;
-  width: 100%;
-  height: 84px;
 }
 
+/***** fundraiser stuff *****/
 .Release-fundraiser-embed-container {
   position: relative;
 }
