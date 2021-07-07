@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e60df46a.chunk.css",
+    "main.js": "/static/js/main.af37e350.chunk.js",
+    "main.js.map": "/static/js/main.af37e350.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.838c32ed.js",
+    "runtime-main.js.map": "/static/js/runtime-main.838c32ed.js.map",
+    "static/js/2.5840902d.chunk.js": "/static/js/2.5840902d.chunk.js",
+    "static/js/2.5840902d.chunk.js.map": "/static/js/2.5840902d.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.dcd3317fd687af8bed90ffd4d4e15c00.js": "/precache-manifest.dcd3317fd687af8bed90ffd4d4e15c00.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.e60df46a.chunk.css.map": "/static/css/main.e60df46a.chunk.css.map",
+    "static/js/2.5840902d.chunk.js.LICENSE.txt": "/static/js/2.5840902d.chunk.js.LICENSE.txt",
+    "static/media/amazon.png": "/static/media/amazon.86168f5f.png",
+    "static/media/apple.png": "/static/media/apple.5e5bcf64.png",
+    "static/media/bandcamp.png": "/static/media/bandcamp.9de56b73.png",
+    "static/media/deezer.png": "/static/media/deezer.8e3c0daf.png",
+    "static/media/existence_is_a_knife.jpg": "/static/media/existence_is_a_knife.f6e99618.jpg",
+    "static/media/god_only_knows.jpg": "/static/media/god_only_knows.c34e44b1.jpg",
+    "static/media/googleplay.png": "/static/media/googleplay.017e87d3.png",
+    "static/media/grow_it_clean.jpg": "/static/media/grow_it_clean.53ce906d.jpg",
+    "static/media/App.css": "/static/media/guitar_cropped_xparent_bkgd_dark50.464562bb.png",
+    "static/media/happy_safe_and_free.jpg": "/static/media/happy_safe_and_free.0f4e3a62.jpg",
+    "static/media/iheart.png": "/static/media/iheart.ef330eef.png",
+    "static/media/napster.png": "/static/media/napster.e5775251.png",
+    "static/media/quite_the_idea_stacked_white.png": "/static/media/quite_the_idea_stacked_white.d48044c4.png",
+    "static/media/shes_not_lovin_it.jpg": "/static/media/shes_not_lovin_it.92f85186.jpg",
+    "static/media/soundcloud.png": "/static/media/soundcloud.a186227d.png",
+    "static/media/spotify.png": "/static/media/spotify.d7397bd6.png",
+    "static/media/tidal.png": "/static/media/tidal.08efd6d6.png",
+    "static/media/what_i_see_is_someone.jpg": "/static/media/what_i_see_is_someone.81f41c4b.jpg",
+    "static/media/what_would_make_us_truly_great.png": "/static/media/what_would_make_us_truly_great.e82d2b51.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.838c32ed.js",
+    "static/js/2.5840902d.chunk.js",
+    "static/css/main.e60df46a.chunk.css",
+    "static/js/main.af37e350.chunk.js"
+  ]
+}
