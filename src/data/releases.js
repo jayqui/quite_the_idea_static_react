@@ -76,7 +76,6 @@ export default [
     slug: 'what-would-make-us-truly-great',
     image: what_would_make_us_truly_great,
     bandcampEmbedUrl: 'https://bandcamp.com/EmbeddedPlayer/track=2252217106/size=large/bgcol=ffffff/linkcol=5bb7d9/tracklist=false/transparent=true/',
-    goFundMeEmbedUrl: 'https://www.gofundme.com/mvc.php?route=widgets/mediawidget&fund=jay039s-campaign-for-impact-justice&image=0&coinfo=0&preview=1',
     platformUrls: whatWouldMakeUsTrulyGreatUrls,
   },
 ];
